@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0,0, 0.3), rgba(0, 0,0, 0.3)), url(img/BC.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Main-Card{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(rgb(66, 57, 75,0.7),rgba(190, 150, 140, 0.493));
+    padding: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-section{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.search-section .search-Input{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px 0;
+    border-bottom: 5px solid #8f6165;
+}
+.search-section .search-Input::placeholder{
+    color: rgb(24, 24, 24);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.search-section .search-Input:focus{
+    border-radius: 15px 0;
+    border-bottom: 5px solid #43405c;
+    transition: 1.5s;
+}
+.city-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 250px;
+    min-height: 45vh;
+}
+
+.city-section .city-name{
+    color: #2c2b3a;
+    font-weight: 500;
+}
+
+.city-section .date {
+    color: #ffff;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.city-section .city-img{
+    width: 120px;
+}
+.city-section .city-temp{
+    color: #ffffffd0;
+}
+#wether-icon{
+    font-size: 150px;
+    color: #2c2b3a;
+}
